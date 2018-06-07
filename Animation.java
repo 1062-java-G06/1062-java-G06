@@ -39,7 +39,7 @@ public class Animation {
 			currentFrame = 0;
 			playedOnce = true;
 		}
-		//this is a
+		
 	}
 	
 	public int getFrame() { return currentFrame; }
