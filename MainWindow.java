@@ -20,8 +20,7 @@ public class MainWindow extends JFrame{
 	JPanel imagePanel;
 	
 	public MainWindow(){
-		Image img = Toolkit.getDefaultToolkit().getImage("title.png");
-		setIconImage(img);
+		
 	    setTitle("Snake By XJX");
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //	    setSize(602, 507);
@@ -30,8 +29,8 @@ public class MainWindow extends JFrame{
 	    setLocationRelativeTo(null);
 	    
 	   
-	    backgroundImage = new ImageIcon("background//sky2.jpg");
-	    backgroundImage.setImage(backgroundImage.getImage().getScaledInstance(1000,540,Image.SCALE_SMOOTH));
+	   // backgroundImage = new ImageIcon("");
+	   // backgroundImage.setImage(backgroundImage.getImage().getScaledInstance(1000,540,Image.SCALE_SMOOTH));
         label = new JLabel(backgroundImage);  
         label.setBounds(0,0, this.getWidth(), this.getHeight());   
         imagePanel = (JPanel) this.getContentPane();  
@@ -82,7 +81,7 @@ public class MainWindow extends JFrame{
 		snake.setOpaque(false);
 		imagePanel.add(snake, BorderLayout.CENTER);
 		
-		Æ÷
+		Ã†Ã·
 		remove_net.addActionListener(new ActionListener(){
         	public void actionPerformed(ActionEvent e){
         		if(!snake.If_remove)
@@ -177,7 +176,8 @@ public class MainWindow extends JFrame{
 		}
 		headItems[3].setSelected(true);
 		
-		String body[] = {"ÇÉ","","",""};
+				  
+		String body[] = {"Ã‡Ã‰","","",""};
 		bodyItems = new JRadioButtonMenuItem[body.length];
 		bodyGroup = new ButtonGroup();
 		ImageIcon bodyIcon[] = new ImageIcon[body.length];
@@ -253,12 +253,12 @@ public class MainWindow extends JFrame{
 	}
 	
 	class Alter_Bacground extends JDialog{
-		/**
-		 * 
-		 */
+		
+		
+		
 		private static final long serialVersionUID = -990903376750998765L;
 		private final int back_kind = 6;
-		private Font f = new Font("Î¢ÈíÑÅºÚ",Font.PLAIN,15);
+		private Font f = new Font("",Font.PLAIN,15);
 		private JPanel p = new JPanel();
 		
 		public Alter_Bacground(){
